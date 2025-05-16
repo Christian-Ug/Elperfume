@@ -17,6 +17,8 @@ public class ProductosService {
 
     public List<Producto>findAll(){return productosRepository.findAll();}
     public Producto findByIdP(Long id){return productosRepository.findById(id).get();}
+    public Producto save (Producto producto){return productosRepository.save(producto);}
+    public void delete (Long id){productosRepository.deleteById(id);}
 
 
 }
